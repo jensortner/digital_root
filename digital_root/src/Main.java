@@ -10,9 +10,10 @@ public class Main {
     int numb = scanner.nextInt();
     scanner.close();
 
-        digitalRoot(numb);
+    int numbOut;
+        numbOut =  digitalRoot(numb);
 
-        public void digitalRoot(int n){
+        public Integer digitalRoot(int n) {
             int temp = 0;
             while (n<=0) {
                 temp += n%10;
@@ -21,5 +22,8 @@ public class Main {
             }
             return temp<10? temp: digitalRoot(temp);
         }
+    }
+
+
     }
 }
